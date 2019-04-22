@@ -43,10 +43,9 @@
 </head>
 <body>
 <div>
-    <form method="POST" action="{{Route('save')}}" name="insertForm" >
+    <form method="POST" action="{{Route('save')}}" name="insertForm" enctype="multipart/form-data">
         {{csrf_field()}}
-        ID: <br>
-        <input type="text" name="id" placeholder="ID"><br>
+        <input type="hidden" name="id" >
         Tên Sản Phẩm: <br>
         <input type="text" name="ten_san_pham" placeholder="tên sản phẩm"><br>
         Hình Ảnh: <br><br>
@@ -57,7 +56,7 @@
                 <option value="{{ $row->id }}">{{ $row->loai_san_pham }}</option>
             @endforeach
         </select> <br>
-        <input type="" name=""> type="submit" onclick="insertForm.action='{{Route('upload')}}';  return true;" value="OK">
+        <button type="submit" >OK</button>
     </form>
 </div>
 

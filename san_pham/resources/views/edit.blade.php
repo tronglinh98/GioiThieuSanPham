@@ -42,10 +42,9 @@
     </style>
 </head>
 <body>
-<form  action="{{Route('save_edit')}}"  method="POST">
+<form  action="{{Route('save_edit')}}"  method="POST" enctype="multipart/form-data">
     {{ csrf_field() }}
-    ID: <br>
-    <input type="text" name="id" value="{{$s['id']}}"> <br>
+    <input type="hidden" name="id" value="{{$s['id']}}">
     Tên Sản Phẩm: <br>
     <input type="text" name="ten_san_pham" value="{{$s['ten_san_pham']}}"><br>
     Hình Ảnh:<br><br>

@@ -8,4 +8,3 @@ Route::post('/save_edit',['as'=>'save_edit','uses'=>'san_phamController@save_edi
 Route::get('/delete/{id}','san_phamController@delete');
 Route::get('/search',['as'=>'search','uses'=>'san_phamController@search']);
 
-Route::post('/upload',['as'=>'upload','uses'=>'san_phamController@uploadImage']);
