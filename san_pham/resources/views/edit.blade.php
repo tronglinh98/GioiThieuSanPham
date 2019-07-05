@@ -17,7 +17,7 @@
             box-sizing: border-box;
         }
         textarea{
-            width: 650px;
+            width: 700px;
             height: 350px;
             /*padding: 100px 20px;*/
             /*text-align: left;*/
